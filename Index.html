@@ -1,0 +1,176 @@
+
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
+  <header class= "header">
+    <h1 id="title" class="text-center">Tagasisideküsitlus klientidele</h1>
+    <p id="kirjeldus"
+       class="kysimustikukirjeldus">Aitäh, et võtad aega küsitluses osalemiseks!</p>
+    </header>
+ <form id="kysitluse-vorm">
+   <div class="vorm-grupp">
+     <label id="nimesilt"
+            for="nimi">Nimi</label>
+  <input
+     type="text"
+     name="nimi"
+     id="nimi"
+     class="vormi-kontroll"
+     placeholder="Sisesta oma nimi"
+     required
+     />
+   </div>
+  <div class "vorm-grupp">
+  <label id= "email-silt"
+   for="email">E-mail</label>
+  <input
+    type="email"
+    name="email"
+    id="email"
+    class="vormi-kontroll"
+    placeholder="Sisesta oma e-mail"
+    required/>
+   </div>
+   <div class="vormi-grupp">
+     <label id="numbri-silt"
+   for="number"
+   >Vanus<span class="clue">(valikuline)</span></label>
+     <input
+      type="number"
+      name="vanus"
+      id="number"
+      min="10"
+      max="99"
+      class="vormi-kontroll"
+      placeholder="Vanus"/></div>
+ <div class="vormi-grupp">
+   <p>Millisel ametikohal töötad?</p>
+   <select id="dropdown" name="role" class="vormi-kontroll" required>
+     <option disable selected value>Vali praegune roll</option>
+     <option       value="opilane">Õpilane/Üliõpilane</option>
+     <option
+value="tooline">Täiskohaga töötaja</option>
+     <option
+value="tootu">Töötu</option>
+     <option
+value="eisoovioelda">Ei soovi öelda</option>
+     <option
+ value="midagimuud">Midagi muud</option>
+   </select>
+   </div>
+   
+ <div class="vormi-grupp">
+   <p>Kas sa soovitaksid meie firmat oma tuttavatele või sõpradele?</p>
+   <label>
+     <input
+      name="kasutaja-soovitus"
+      value="Kindlasti"
+      type="radio"
+      class="input-radio"
+      checked
+            />Kindlasti</label>
+   <label>
+     <input
+      name="kasutaja-soovitus"
+      value="võib-olla"
+      type="radio"
+      class="input-radio"
+            />Võib-olla</label>
+   <input
+     name="kasutaja-soovitus"
+     value="eiolekindel"
+     type="radio"
+     class="input-radio"
+          />Ei ole kindel</label>
+   </div>
+  
+  <div class="vormi-grupp">
+    <p>
+      Mis on su lemmikomadus meie firma juures?</p>
+    <select id="meeldivus" name"meeldivus"
+    class="vormi-kontroll" required>
+      <option disabled selected value>Vali</option>
+      <option
+value="kiirus">Kiirus</option>
+<option
+value="klienditeenindus">Klienditeenindus</option>
+<option
+ value="tootevalik">Tootevalik</option>
+<option
+ value="mugavus">Mugavus</option>
+ <option
+ value="kvaliteet">Kvaliteet</option>
+    </select>
+  </div>
+
+<div class="vormi-grupp">
+  <p> Mis võiks paremini olla? <span class="clue">(Vali kõik sobivad vastused.)</span></p>
+  <label>
+    <input
+    name="eelistus"
+    value="suuremtootevalik"
+    type="checkbox"
+    class="input-checkbox"
+    />Tootevalik</label>
+  
+   <label>
+    <input
+    name="eelistus"
+    value="klienditeenindus"
+    type="checkbox"
+    class="input-checkbox"
+    />Klienditeenindus</label>
+  
+  <label>
+    <input
+    name="eelistus"
+    value="tarneaeg"
+    type="checkbox"
+    class="input-checkbox"
+    />Tarneaeg</label>
+  
+  <label>
+    <input
+    name="eelistus"
+    value="pakendamine"
+    type="checkbox"
+    class="input-checkbox"
+    />Pakendamine</label>
+  
+  <label>
+    <input
+    name="eelistus"
+    value="kvaliteet"
+    type="checkbox"
+    class="input-checkbox"
+    />Kvaliteet</label>
+  </div>
+  
+  
+  <div class="vormi-grupp">
+    <p>Ettepanekud või soovitused:</p>
+    <textarea
+     id="kommentaarid"
+     class="input-textarea"
+     name="kommentaarid"
+     placeholder= "Lisa oma ettepanekud ja soovitused siia...">
+      </textarea>
+  </div>
+  
+ </div class="vormi-grupp" >
+  <button type="saada" id="saada"
+          class="sumbit-button"><strong>Saada oma vastus</strong>
+</button>
+</div>
+</form>
+</div>
+  
+          
+
+  
+     
+  
+     
+
+     
+       

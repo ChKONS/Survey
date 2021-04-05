@@ -1,0 +1,181 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white:#FFFFFF;
+  --color-darkgreen: #006400;
+  --color-darkgreen2: #228B22;
+  --color-black:#0000
+}
+
+*,
+* :: before,
+* :: after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', arial;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin:0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(11, 156, 49, 0.7)
+    ),
+    url(https://st.depositphotos.com/2627989/4694/i/950/depositphotos_46941945-stock-photo-spring-forrest-sunset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
+h1{
+  font-weight: 500;
+  line-height:1.5;
+}
+
+p{
+  font-size:1.125rem;
+}
+
+h1,p{
+  margin-top=0;
+  margin-bottom=0.5rem;
+}
+
+nimesilt {
+  dispaly: flex;
+  align-items: center;
+  font-size:1.125rem;
+  margin-bottom: 0.5rem;  
+}
+
+input,
+kirjeldus,
+button,
+select,
+textarea {
+  margin:0
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+  border: none;
+}
+.container {
+  width: 100%;
+  margin:3.125rem auto 0 auto;
+}
+
+@media (min-width:576px) {
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768) {
+  .container {
+    max-width:720px;
+  }
+}
+.header {
+  padding: 0rem 0.625rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.kysimustikukirjeldus {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px #0000;
+  text-align: center;
+}
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: ##e4e4e4;
+}
+
+.text {
+  text-align: center;
+}
+
+form {
+  background: var(--color-darkgreen);
+  padding: 2.5rem 2.5rem;
+  border-radius: 5rem;
+}
+
+@media (min-width:480px){
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.vormi-grupp {
+  margin: 5 auto 1.25rem auto;
+  padding: 0.15rem;
+}
+
+.vormi-kontroll {
+  display: block;
+    width: 100%;
+     height: 2.375rem;
+     padding: 0.25rem 0rem;
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 2px solid #ced4da;
+     border-radius: 0.25rem;
+     transition: border color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+}
+
+.vormi-kontroll:focus{
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  font-family: inherit;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.sumbit-button {
+  font-family: inherit;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  background: black;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
